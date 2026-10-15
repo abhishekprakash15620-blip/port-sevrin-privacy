@@ -9,9 +9,6 @@
 body{margin:0;padding:28px 18px 64px;max-width:760px;margin-inline:auto;
   font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   background:#fff;color:#1a1a1a;-webkit-text-size-adjust:100%}
-@media(prefers-color-scheme:dark){body{background:#111417;color:#e8eaed}
-  a{color:#8ab4f8}hr{border-color:#2a2f35}th,td{border-color:#2a2f35}
-  .box{background:#171b1f;border-color:#2a2f35}}
 h1{font-size:clamp(24px,6vw,32px);line-height:1.2;margin:0 0 6px}
 .sub{color:#666;margin:0 0 4px}
 @media(prefers-color-scheme:dark){.sub{color:#9aa0a6}}
@@ -24,11 +21,15 @@ th{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:#666}
 .box{background:#f6f7f9;border:1px solid #e3e3e3;border-radius:10px;padding:14px 16px;margin:14px 0}
 ul{padding-left:22px}li{margin:0 0 7px}
 code{background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px;font-size:14px}
+/* Dark mode last, so it overrides the light rules above (it came first before, and lost). */
+@media(prefers-color-scheme:dark){body{background:#111417;color:#e8eaed}
+  a{color:#8ab4f8}hr{border-color:#2a2f35}th,td{border-color:#2a2f35}
+  .box{background:#171b1f;border-color:#2a2f35;color:#e8eaed}}
 </style></head><body>
 
 <h1>Privacy Policy</h1>
 <p class="sub"><strong>Port Sevrin: Nine Cases</strong></p>
-<p class="sub">Last updated: 14 October 2026</p>
+<p class="sub">Last updated: 15 October 2026</p>
 
 <hr>
 
